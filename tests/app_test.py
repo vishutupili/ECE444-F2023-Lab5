@@ -1,9 +1,10 @@
 import os
 import pytest
 from pathlib import Path
-from project.app import app, init_db
+from project.app import app, db
 import json
 
+TEST_DB = "test.db"
 # configuration
 DATABASE = "flaskr.db"
 USERNAME = "admin"
@@ -14,11 +15,13 @@ SECRET_KEY = "change_me"
 def client():
     BASE_DIR = Path(__file__).resolve().parent.parent
     app.config["TESTING"] = True
-    app.config["DATABASE"] = BASE_DIR.joinpath(DATABASE)
+    app.config["DATABASE"] = BASE_DIR.joinpath(TEST_DB)
+    app.config["SQLALCHEMY_DATABASE_URI"] = f"sqlite:///{BASE_DIR.joinpath(TEST_DB)}"
 
-    init_db() # setup
-    yield app.test_client() # tests run here
-    init_db() # teardown
+    with app.app_context():
+        db.create_all()
+        yield app.test_client() 
+        db.drop_all()  
 
 def login(client, username, password):
     return client.post(
