@@ -12,7 +12,7 @@ Here are the test functions that I added to my group project:
 Test driven development (TDD) is a method of coding where programmers write tests before implementing code. There are many pros and cons to TDD.
 ### Pros
 - TDD helps everyone in a team set expectations for how they expect a feature/function to behave before it is implemented (everyone is on the same page)
-- TDD allows for better collaboration when implementing code sice the tests set clear expectations
+- TDD allows for better collaboration when implementing code since the tests set clear expectations
 - TDD ensures that the testing process is not rushed (since tests are designed before code is implemented)
 - TDD often involves a test for each feature, which results in more reliable code
 - TDD works well with the Agile method, as both are iterative processes
