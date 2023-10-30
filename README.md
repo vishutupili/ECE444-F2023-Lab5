@@ -5,8 +5,8 @@ In this repository, I have replayed the example from https://github.com/mjhea0/f
 ## Part 2: Adding Test Functions to Group Project
 Here are the test functions that I added to my group project:
 - https://github.com/ECE444-2023Fall/project-1-web-application-design-group11-webwizards/blob/backend-crud-calls-for-user-accounts/backend/tests/test_user_routes.py#L13-L21
-- https://github.com/ECE444-2023Fall/project-1-web-application-design-group11-webwizards/blob/backend-crud-calls-for-user-accounts/backend/tests/test_user_routes.py#L24-L31
-- https://github.com/ECE444-2023Fall/project-1-web-application-design-group11-webwizards/blob/backend-crud-calls-for-user-accounts/backend/tests/test_user_routes.py#L33-L36
+- https://github.com/ECE444-2023Fall/project-1-web-application-design-group11-webwizards/blob/backend-crud-calls-for-user-accounts/backend/tests/test_user_routes.py#L24-L32
+- https://github.com/ECE444-2023Fall/project-1-web-application-design-group11-webwizards/blob/backend-crud-calls-for-user-accounts/backend/tests/test_user_routes.py#L34-L37
 
 ## Part 3: Pros and Cons of TDD
 Test driven development (TDD) is a method of coding where programmers write tests before implementing code. There are many pros and cons to TDD.
